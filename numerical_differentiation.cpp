@@ -15,7 +15,7 @@ double nCk(int n, int k)
     return factorial(n)/(factorial(k) * factorial(n - k));
 }
 
-double forward_difference(double x, double (*f)(double), int order)
+double forward_difference(double (*f)(double), double x, int order)
 {
     double eps = pow(10, -4);
     int n = order;
@@ -33,7 +33,7 @@ double forward_difference(double x, double (*f)(double), int order)
     return sum;
 }
 
-double five_point_stencil(double x, double (*f)(double), int order)
+double five_point_stencil(double (*f)(double), double x, int order)
 {
     double eps = pow(10, -4);
     int n = order;
@@ -61,6 +61,6 @@ double five_point_stencil(double x, double (*f)(double), int order)
     }
     else
     {
-        return forward_difference(x, f, order);
+        return forward_difference(f, x, order);
     }
 }
