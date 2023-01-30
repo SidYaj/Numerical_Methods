@@ -7,8 +7,8 @@ double factorial(int);
 
 double nCk(int, int);
 
-double forward_difference(double, double (*f)(double), int);
+double forward_difference(double (*f)(double), double, int);
 
-double five_point_stencil(double, double (*f)(double), int);
+double five_point_stencil(double (*f)(double), double, int);
 
 #endif
