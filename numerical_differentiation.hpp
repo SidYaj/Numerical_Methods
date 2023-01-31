@@ -5,10 +5,10 @@
 
 double factorial(int);
 
-double nCk(int, int);
+double nCk(int n, int k);
 
-double forward_difference(double (*f)(double), double, int);
+double forward_difference(double (*f)(double), double x, int order);
 
-double five_point_stencil(double (*f)(double), double, int);
+double five_point_stencil(double (*f)(double), double x, int order);
 
 #endif
