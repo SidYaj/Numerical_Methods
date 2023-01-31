@@ -19,3 +19,11 @@ For numerical integration, I have implemented a single method, the 1/3 Simpson's
 Algorithms for root finding are declared in the header file root_finding.hpp and implemented in the C++ file root_finding.cpp
 
 For root finding, I have implemented a single method, the Newton-Rhapson method.
+
+## Ordinary Differential Equations
+
+Algorithms for solving ordinary differential equations are declared in the header file ode.hpp and implemented in the C++ file ode.cpp.
+
+For solving ordinary differential equations, I have implemented a single method, the fourth order Runge-Kutta method. The method is overloaded so that based on the number of parameters specified the order of the differential equation is inferred. At this point it is not possible to solve higher-order differential equations.
+
+For first-order ODEs, the equation is in the form x' = b(t)x + c(t). For second-order ODEs, the equation is in the form x'' = b(t)x' + c(t)x + d(t).
