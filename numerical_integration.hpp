@@ -1,5 +1,5 @@
-#ifndef NUMERICAL_INTEGRATION_H
-#define NUMERICAL_INTEGRATION_H
+#ifndef NUMERICAL_INTEGRATION_HPP
+#define NUMERICAL_INTEGRATION_HPP
 
 #include "numerical_integration.hpp"
 

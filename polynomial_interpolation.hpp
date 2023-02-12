@@ -1,5 +1,5 @@
-#ifndef POLYNOMIAL_INTERPOLATION_H
-#define POLYNOMIAL_INTERPOLATION_H
+#ifndef POLYNOMIAL_INTERPOLATION_HPP
+#define POLYNOMIAL_INTERPOLATION_HPP
 
 #include<vector>
 #include "polynomial_interpolation.hpp"
