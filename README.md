@@ -26,4 +26,10 @@ Algorithms for solving ordinary differential equations are declared in the heade
 
 For solving ordinary differential equations, I have implemented a single method, the fourth order Runge-Kutta method. The method is overloaded so that based on the number of parameters specified the order of the differential equation is inferred. At this point it is not possible to solve higher-order differential equations.
 
-For first-order ODEs, the equation is in the form x' = b(t)x + c(t). For second-order ODEs, the equation is in the form x'' = b(t)x' + c(t)x + d(t).
+For first-order ODEs, the equation is in the form $\dot{x} = b(t)x + c(t)$. For second-order ODEs, the equation is in the form $\ddot{x} = b(t)\dot{x} + c(t)x + d(t)$.
+
+## Polynomial Interpolation
+
+Algorithms for finding the interpolating polynomial are declared in the header file polynomial_interpolation.hpp and implemented in the C++ file polynomial_interpolation.cpp.
+
+For finding the interpolating polynomial, I have as of now implemented a single method, the Lagrange interpolation method. The user inputs a set of $n + 1$ $(x, y)$ points as well as the $x$ value for which they want to find the interpolated $y$ value. Functionality will be added later which returns the coefficients of the interpolated polynomial. 
