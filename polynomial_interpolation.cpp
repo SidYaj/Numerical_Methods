@@ -1,5 +1,5 @@
 #include "polynomial_interpolation.hpp"
-#include<iostream>
+#include <iostream>
 
 double lagrange_interpolation(std::vector<double> x_vec, std::vector<double> y_vec, double x)
 {
