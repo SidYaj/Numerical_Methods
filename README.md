@@ -32,4 +32,6 @@ For first-order ODEs, the equation is in the form $\dot{x} = b(t)x + c(t)$. For 
 
 Algorithms for finding the interpolating polynomial are declared in the header file polynomial_interpolation.hpp and implemented in the C++ file polynomial_interpolation.cpp.
 
-For finding the interpolating polynomial, I have as of now implemented a single method, the Lagrange interpolation method. The user inputs a set of $n + 1$ $(x, y)$ points as well as the $x$ value for which they want to find the interpolated $y$ value. Functionality will be added later which returns the coefficients of the interpolated polynomial. 
+For finding the interpolating polynomial, I have as of now implemented a single method, the Lagrange interpolation method. The user inputs a set of $n + 1$ $(x, y)$ points as well as the $x$ value for which they want to find the interpolated $y$ value.
+
+Another method which calculates and returns the coefficients of the Lagrange interpolating polynomial for a set of points $(x, y)$ is also implemented. It uses Eigen3 which is a library which supports great linear algebra, matrix and vector functionality. The function accepts two Eigen::VectorXd containing the n + 1 x and y points respectively. It returns an Eigen::VectorXd $a$ of size n + 1 which contains the coefficients of the n-th order polynomial. A method is also provided which accepts to polynomial coefficients and outputs the polynomial in a human readable manner.
